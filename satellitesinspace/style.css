@@ -1,6 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
     background-color: black;
+    height: 3000px;
 }
 
 .bg{
@@ -96,7 +101,7 @@ nav ul li:hover::after{
     font-size: 16px;
 }
 
-button{
+.btn-1{
     width: 200px;
     padding: 16px 8px;
     margin: 20px 10px;
@@ -111,7 +116,7 @@ button{
 }
 
 
-button::after, button::before{
+.btn-1::after, .btn-1::before{
     border: 3px solid white;
     border-radius: 35px;
     content: "";
@@ -123,10 +128,15 @@ button::after, button::before{
     transition: transform 0.3s ease;
 }
 
-button:hover::after{
+.btn-1:hover::after{
     transform: translate(-5px,-5px);
 }
 
-button:hover::before{
+.btn-1:hover::before{
     transform: translate(5px,5px);
+}
+
+.map-png{
+    display: block;
+    margin: auto;
 }
